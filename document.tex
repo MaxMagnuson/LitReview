@@ -24,9 +24,24 @@
 \end{abstract}
 
 \section{Introduction}
-\cite{ThematicEmerge}
+Narrative generation is the process of algorithmically creating stories. This process can take many forms. The algorithm could iteratively add scenes to a narrative while checking for logical consistency. The algorithm could treat each character as an agent and account their actions. There are many other approaches too. All of the approaches though have a few distinct commonalities. Each approach has some randomness built in. This is required so that the same narrative is not generated each time. The randomness can be in the sequence of events, the chosen events, or variability in user input. The other characteristic that is required is logical consistency. A narrative must tell a coherent story for it to be successful. If the story has no logical consistency, it will only leave users lost, confused, and uninterested.   
 
-\section{Background}
+Narrative generation has a variety of applications. In the context of entertainment, a new narrative can be generated each time a person plays a video game. This provides the player a unique experience in each playthrough. In the context of education, a narrative generation algorithm can produce a large volume of reading material. This is incredibly useful for those learning a language. The algorithm could even allow for user input. This would allow the algorithm to create stories which cater to the user's preferences which would make it more interesting or engaging for the learner. 
+
+\section{Approaches to Narrative Generation}
+Approaches to narrative generation can be broken down into two general categories: Story driven and character driven. In story driven approaches, the plot is the focus of the algorithm. These algorithms strive for a logical sequence of events and quality writing to create the story telling experience. Character driven approaches treat each of the characters as agents. We can construct a narrative by describing the interactions of the agents between other characters or the environment.
+
+Difficulties in narrative generation
+
+\subsection{Story Driven Approaches}
+
+Story driven approaches focus on constructing story elements as the main method of narrative generation. These can take a few different forms. 
+
+Hargood et al. outlined a model for a top down approach which focuses on themes\cite{ThematicEmerge}. Their model takes a main theme and breaks that theme down into smaller subthemes. The subthemes are broken down further into motifs which are general items or ideas associated with the themes or subthemes. For example, if a subtheme is music, then potential motifs could be dance or stereo. Then features are selected for the motifs which are specific instances of the motifs. To build on the music example, a feature could be the name of someone dancing or a specific type of stereo. This framework provides an excellent structure for generating narratives. The features can be used for the various nouns and subjects in the narrative. By using the features from the model, the narrative can adhere to an overall theme. By adhering to an overall theme, the narrative will maintain consistency.
+
+\subsection{Character Driven Approaches}
+
+\section{Example Approaches}
 
 \subsection{Story Driven Approaches}
 -Structuralism
@@ -34,6 +49,10 @@
 
 \subsection{Character Driven Approaches}
 
+\section{Potential for Future Work}
+I think that the character driven narrative approaches have some significant advantages. One major issue with story driven approaches is that the characters often end up being shallow since the focus is on the overall story or themes. If the characters are acting to accomplish their goals or according to their relationships to other characters it makes them seem more complete.
+
+I would like to see more research in the area of character driven algorithms. I think that modeling narrative generation as a multi agent game would be promising. Each character would have a set of goals that they are attempting to complete, and a set of actions they can perform to help complete those goals. Each character would work autonomously and choose their actions to maximize goal completion. This would have all of the typical benefits of a character driven approach with the added benefit of ensuring a clear narrative structure. Since the characters would be competing to complete their goals it would create tension and interesting interactions between them. The narrative would have a very clear ending once some number of the characters have completed their respective goals.
 \bibliography{mybib}
 \bibliographystyle{plain}
 \end{document}
